@@ -1,0 +1,3 @@
+first run this command to build the image
+
+> docker build . -t odoo_with_panda:13.0
