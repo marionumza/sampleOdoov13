@@ -1,0 +1,8 @@
+<odoo>
+    <menuitem id="estate_menu_root" name="Estate"/>
+    <menuitem id="test_first_level_menu" parent="estate_menu_root" name="Real Estate"/>
+    <menuitem id="test_first_level_menu_two" parent="estate_menu_root" name="Setting"/>
+    <menuitem id="estate_property_model_menu_action" parent="test_first_level_menu" action="estate_property_model_action"/>
+    <menuitem id="estate_property_tag_model_menu_action" parent="test_first_level_menu_two" action="estate_property_tag_model_action"/>
+    <menuitem id="estate_property_type_model_menu_action" parent="test_first_level_menu_two" action="estate_property_type_model_action"/>
+</odoo>
