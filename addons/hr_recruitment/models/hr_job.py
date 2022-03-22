@@ -6,7 +6,7 @@ from odoo.addons.web.models.models import SEARCH_PANEL_LIMIT
 
 class Job(models.Model):
     _name = "hr.job"
-    _inherit = ["mail.alias.mixin", "mail.activity.mixin", "hr.job"]
+    _inherit = ["mail.alias.mixin", "hr.job"]
     _order = "state desc, name asc"
 
     @api.model
