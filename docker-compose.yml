@@ -10,6 +10,7 @@ services:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
       - ./custom:/mnt/extra-addons
+      - ./addons:/usr/lib/python3/dist-packages/odoo/addons
     environment:
       - HOST=db
       - USER=odoo
