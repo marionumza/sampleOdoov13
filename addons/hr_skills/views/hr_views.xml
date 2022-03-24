@@ -91,6 +91,7 @@
                                     <field name="skill_type_id" invisible="1"/>
                                     <field name="skill_id"/>
                                     <field name="skill_level_id"/>
+                                    <field name="no_of_years"/>
                                     <field name="level_progress" widget="progressbar"/>
                                 </tree>
                             </field>
@@ -132,6 +133,9 @@
                                     <field name="skill_type_id" invisible="1"/>
                                     <field name="skill_id"/>
                                     <field name="skill_level_id"/>
+                                    <field name="no_of_years"/>
+                                    <field name="testimonial"/>
+                                    <field name="approved_by"/>
                                     <field name="level_progress" widget="progressbar"/>
                                 </tree>
                             </field>
@@ -172,6 +176,9 @@
                                     <field name="skill_type_id" invisible="1"/>
                                     <field name="skill_id"/>
                                     <field name="skill_level_id"/>
+                                    <field name="no_of_years"/>
+                                    <field name="testimonial"/>
+                                    <field name="approved_by"/>
                                     <field name="level_progress" widget="progressbar"/>
                                 </tree>
                             </field>
@@ -269,6 +276,13 @@
                         <group>
                             <field name="skill_level_id" domain="[('skill_type_id', '=', skill_type_id)]"/>
                             <field name="level_progress" widget="progressbar"/>
+                        </group>
+                        <group>
+                            <field name="no_of_years"/>
+                            <field name="testimonial"/>
+                        </group>
+                        <group>
+                            <field name="approved_by"/>
                         </group>
                     </group>
                 </sheet>

@@ -24,6 +24,9 @@ class EmployeeSkill(models.Model):
     skill_level_id = fields.Many2one('hr.skill.level', required=True)
     skill_type_id = fields.Many2one('hr.skill.type', required=True)
     level_progress = fields.Integer(related='skill_level_id.level_progress')
+    no_of_years = fields.Integer('Number of years', default=0)
+    testimonial = fields.Text('Testimonial (git/url)')
+    approved_by = fields.Many2one('hr.employee', string='Approved By')
 
     _sql_constraints = [
         ('_unique_skill', 'unique (employee_id, skill_id)', "Two levels for the same skill is not allowed"),

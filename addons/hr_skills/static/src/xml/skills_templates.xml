@@ -9,6 +9,9 @@
         <td class="o_data_cell o_skill_cell pr-3">
             <t t-esc="data.skill_level_id.data.display_name"/>
         </td>
+        <td class="o_data_cell o_skill_cell pr-3">
+            <t t-esc="data.no_of_years"/> <span> years</span>
+        </td>
     </tr>
 </t>
 
